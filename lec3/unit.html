@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Units Example</title>
+        <style>
+            .px-box{
+                width: 200px;
+                height: 100px;
+                background-color: lightcoral;
+                margin-bottom: 20px;
+            }
+
+            .percent-box{
+                width: 50%;
+                height: 80px;
+                background-color: lightgreen;
+                margin-bottom: 20px;
+            }
+
+            .parent{
+                width: 400px;
+                border: 2px solid black;
+                padding: 10px;
+            }
+
+            .em-text{
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            html{
+                font-size: 16px;
+            }
+
+            .rem-text{
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            .vw-vh-box{
+                width: 50vw;
+                height: 20vh;
+                background-color: lightblue;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <head>
+        <h2>CSS Units Example</h2>
+        <h3>1. PX(Fixed Unit)</h3>
+        <div class="px-box">200px x 100px</div>
+        <h3>2. Percentage (%)</h3>
+        <div class="parent">
+            Parent width=400px
+            <div class=""percent-box">50% width</div>
+        </div>
+        <h3>3. EM Unit</h3>
+        <div style="font-size: 20px;">
+            Parent font-size=200px
+            <p class="em-text">2em=40px</p>
+            <h3>4. REM Unit</h3>
+            <p class="rem-text">2rem=32px(root based)</p>
+            <h3>5.VW & VH</h3>
+            <div class="vw-vh-box">
+                width=50vw<br>
+                height=20vh
+            </div>
+        </div>
+    </head>
+</html>
